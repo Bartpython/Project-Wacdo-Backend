@@ -85,7 +85,7 @@ def read_item(
 # on peut test l'api avec http://127.0.0.1:8000/docs
 # Cela ouvre une interface interactive où tu peux essayer les différentes routes de l'API.
 
-#----------------
+# ----------------
 
 # Liste qui garde les articles reçus
 items = []
@@ -102,6 +102,7 @@ def create_item(item: Item) -> Item:
 @app.get("/items/")
 def list_items() -> list[Item]:
     return items
+
 
 # (item: Item) : le paramètre
 # item, en minuscule, est le nom de la variable qui va recevoir les données
